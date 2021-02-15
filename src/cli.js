@@ -9,4 +9,4 @@ const askNameAndGreet = () => {
   return name;
 };
 
-export { askNameAndGreet };
+export default askNameAndGreet;
