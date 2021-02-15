@@ -1,22 +1,17 @@
 import readlineSync from 'readline-sync';
 
+const MAX_ATTEMPTS = 3;
 const MAX_NUMBER = 100;
 
-const isEven = (value) => !(value % 2);
+const randomNumber = () => Math.floor(Math.random() * Math.floor(MAX_NUMBER));
 
-const askQuestion = (max) => {
-  const number = Math.floor(Math.random() * Math.floor(max));
-  console.log(`Question: ${number}`);
-  return (isEven(number) ? 'yes' : 'no');
-};
-
-const play = (userName) => {
+const createGameFlow = (askQuestion, rules) => ((userName) => {
   let correctAnswersCount = 0;
 
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log(rules);
 
-  while (correctAnswersCount < 3) {
-    const correctAnswer = askQuestion(MAX_NUMBER);
+  while (correctAnswersCount < MAX_ATTEMPTS) {
+    const correctAnswer = askQuestion();
     const userAnswer = readlineSync.question('Your answer: ');
     if (correctAnswer === userAnswer) {
       correctAnswersCount += 1;
@@ -29,6 +24,6 @@ const play = (userName) => {
   }
 
   console.log(`Congratulations, ${userName}!`);
-};
+});
 
-export default play;
+export { randomNumber, createGameFlow };

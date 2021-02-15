@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import askNameAndGreet from '../src/cli.js';
-import evenGame from '../src/games/even.js';
+import calcGame from '../src/games/calc.js';
 
 const userName = askNameAndGreet();
-evenGame(userName);
+calcGame(userName);
