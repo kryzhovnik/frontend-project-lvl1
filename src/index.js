@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 const MAX_ATTEMPTS = 3;
 const MAX_NUMBER = 100;
 
-const randomNumber = () => Math.floor(Math.random() * Math.floor(MAX_NUMBER));
+const randomNumber = (max = MAX_NUMBER) => Math.floor(Math.random() * Math.floor(max));
 
 const createGameFlow = (askQuestion, rules) => ((userName) => {
   let correctAnswersCount = 0;
