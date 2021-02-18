@@ -4,7 +4,7 @@
 
 ![Lint workflow name](https://github.com/kryzhovnik/frontend-project-lvl1/workflows/Linter/badge.svg)
 
-[![](https://github.com/kryzhovnik/frontend-project-lvl1/actions)](https://github.com/kryzhovnik/frontend-project-lvl1/workflows/hexlet-check/badge.svg)
+[![](https://github.com/kryzhovnik/frontend-project-lvl1/actions)](https://github.com/kryzhovnik/frontend-project-lvl1/workflows/hexlet-check/badge.svg)]
 
 ## Look how it works
 
