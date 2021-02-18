@@ -11,3 +11,5 @@ Calc, even: [![asciicast](https://asciinema.org/a/IcuN1y8s2yyl1hC4P9Yq9VsE6.svg)
 GCD (Greatest common divisor): [![asciicast](https://asciinema.org/a/391547.svg)](https://asciinema.org/a/391547)
 
 Progression: [![asciicast](https://asciinema.org/a/391899.svg)](https://asciinema.org/a/391899)
+
+Prime: [![asciicast](https://asciinema.org/a/392205.svg)](https://asciinema.org/a/392205)
